@@ -1,0 +1,47 @@
+{
+  "confluence_search_response": {
+    "result": {
+      "content": [
+        {
+          "text": "[{\"id\": \"123456\", \"title\": \"Test Page 1\", \"space\": {\"key\": \"TEST\", \"name\": \"Test Space\"}, \"excerpt\": \"This is a test page excerpt\", \"url\": \"https://confluence.example.com/pages/123456\"}, {\"id\": \"789012\", \"title\": \"Another Test Page\", \"space\": {\"key\": \"TEST\", \"name\": \"Test Space\"}, \"excerpt\": \"Another test page with content\", \"url\": \"https://confluence.example.com/pages/789012\"}]"
+        }
+      ]
+    }
+  },
+  "confluence_get_page_response": {
+    "result": {
+      "content": [
+        {
+          "text": "{\"id\": \"123456\", \"title\": \"Test Page 1\", \"space\": {\"key\": \"TEST\", \"name\": \"Test Space\"}, \"content\": \"<h1>Test Page Content</h1><p>This is the main content of the test page.</p><p>It contains multiple paragraphs and HTML formatting.</p>\", \"metadata\": {\"title\": \"Test Page 1\", \"space\": {\"key\": \"TEST\", \"name\": \"Test Space\"}, \"content\": {\"value\": \"<h1>Test Page Content</h1><p>This is the main content of the test page.</p><p>It contains multiple paragraphs and HTML formatting.</p>\"}}, \"_links\": {\"webui\": \"https://confluence.example.com/pages/123456\"}}"
+        }
+      ]
+    }
+  },
+  "error_response": {
+    "error": "Tool 'nonexistent_tool' not available. Available tools: ['confluence_search', 'confluence_get_page']"
+  },
+  "gemini_parse_intent_responses": {
+    "search_intent": {
+      "tool": "confluence_search",
+      "parameters": {
+        "query": "type = page AND title ~ \"roadmap\""
+      },
+      "original_query": "search for roadmap pages"
+    },
+    "get_page_intent": {
+      "tool": "confluence_get_page",
+      "parameters": {
+        "title": "Test Page 1"
+      },
+      "original_query": "show me the Test Page"
+    },
+    "summarize_intent": {
+      "tool": "confluence_search_and_summarize",
+      "parameters": {
+        "query": "type = page AND text ~ \"docker\""
+      },
+      "search_term": "docker",
+      "original_query": "summarize pages about docker"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+
+# Optional but recommended testing tools
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# Code coverage
+coverage>=7.0.0
+
+# Test utilities
+mock>=4.0.3
