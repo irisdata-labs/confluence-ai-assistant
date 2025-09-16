@@ -109,12 +109,13 @@ CONFLUENCE_URL=https://your-domain.atlassian.net/wiki
 CONFLUENCE_USERNAME=your-email@domain.com
 CONFLUENCE_TOKEN=your_confluence_api_token
 
+MCP_DOCKER_IMAGE=ghcr.io/sooperset/mcp-atlassian:latest
+
 # Optional Settings
 DEBUG=false
 MAX_CONTENT_LENGTH=8000
 MAX_SEARCH_RESULTS=50
 CONFLUENCE_SPACES_FILTER=
-MCP_DOCKER_IMAGE=ghcr.io/sooperset/mcp-atlassian:latest
 ```
 
 ### Getting API Keys
