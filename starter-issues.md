@@ -33,6 +33,7 @@ Running `demo_app.py` on hosted platforms (e.g., Railway, Render) fails because 
 **Labels:** enhancement, good first issue  
 
 The assistant currently runs interactively in CLI mode. A lightweight web UI (e.g., using **Streamlit** or **Gradio**) would make it easier to demo.  
+This would be a good enhancement once the docker-in-docker limitation has been handled
 
 Deliverables:  
 - Start with a simple input box + output area.  
